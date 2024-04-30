@@ -2,13 +2,15 @@
 
 import React from 'react';
 import './App.css'; // Importez les styles globaux
-import FirstComponent from './components/firstComponent';
+import BrestComponent from './components/BrestComponent';
 import saintMaximeComponent from './components/saintMaximComponent';
-
+import MarseilleComponent from './components/marseilleComponent';
 function App() {
   return (
-    <FirstComponent />
-    
+    <>
+      <BrestComponent />
+      
+    </>
   );
 }
 

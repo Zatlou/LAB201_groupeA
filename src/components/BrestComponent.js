@@ -1,26 +1,24 @@
 import React from 'react';
 import WaveComponent from './waveComponent.js'; 
-import Square from './squareComponent';
+import Square from './squareComponent.js';
 import '../App.css';
 import flecheRetour from './photos/flecheRetour.png';
 import polygon6 from './photos/polygon6.png';
-import backgroundImage from './photos/BackBrest.png'; 
-import MarseilleImage from './photos/Marseille4 3.png';// Importez votre image d'arrière-plan
+import backgroundImage from './photos/BackSainteMaxime.png'; 
+import MarseilleImage from './photos/Marseille4 3.png';
 import flecheNav from './photos/FlecheNavDroite.png';
 
-function FirstComponent() {
-  
+function BrestComponent() {
   const centerStyle = {
     textAlign: 'center',
     fontWeight: 'bold',
     fontSize: '90px', 
     color: '#323232',
-    position: 'absolute', // Position absolue
-    top: '5%', // Aligner au milieu de l'écran
-    left: '50%', // Aligner au centre de l'écran
-    transform: 'translate(-50%, -50%)', // Centrer correctement
-    letterSpacing: '47px',
-     
+    position: 'absolute',
+    top: '5%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    letterSpacing: '47px',  
   };
 
   const rectangleStyle = {
@@ -37,21 +35,18 @@ function FirstComponent() {
   };
 
   const containerStyle = {
-    backgroundImage: `url(${backgroundImage})`, // Définissez l'image d'arrière-plan
+    backgroundImage: `url(${backgroundImage})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: '100% 75%',
-    // Empêchez la répétition de l'image
     width: '100%',
-    height: '100vh', // Taille de l'image égale à la taille de l'écran
-    position: 'relative', // Position relative pour positionner le titre
+    height: '100vh',
+    position: 'relative',
   };
+
   const imageCenterStyle = {
-    position: 'absolute', // Position absolue pour centrer l'image
-    top: '30%', // Aligner au milieu de l'écran
-    left: '25%', // Aligner au centre de l'écran
-    // Changer la largeur de l'image à 100px
-   // Hauteur automatique pour conserver les proportions
-    
+    position: 'absolute',
+    top: '30%',
+    left: '25%',
   };
   
   const flecheStyle = {
@@ -61,12 +56,12 @@ function FirstComponent() {
     width: '25%',
     height: 'auto',
     zIndex: '2',
-   
   };
+
   return (
     <div style={containerStyle}>
       <h2 style={centerStyle}>BREST</h2> 
-      <div style={rectangleStyle}> {/* Contenu supplémentaire */}
+      <div style={rectangleStyle}>
         <img src={flecheRetour} alt="Première image" style={{ width: '40px', height: '40px' }} />
         <img src={polygon6} alt="Deuxième image" style={{ width: '40px', height: '40px' }} />
       </div>
@@ -75,11 +70,9 @@ function FirstComponent() {
         <img src={MarseilleImage} alt="MarseilleImage" style={{ width: '280px', height: 'auto' }}  /> 
       </div>  
       <WaveComponent/>
-                
       <img src={flecheNav} alt="Flèche" style={flecheStyle} />  
-      <saintMaximeComponent/>
     </div>
   );
 }
 
-export default FirstComponent;
+export default BrestComponent;
