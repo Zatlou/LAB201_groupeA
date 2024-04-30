@@ -9,19 +9,23 @@
     position: absolute;
     top: 50%; /* Positionne l'élément au milieu de la page verticalement */
     right: 7%; /* Positionne l'élément tout à droite de la page */
-    transform: translateY(-50%); /* Déplace l'élément de 50% de sa propre hauteur vers le haut */
+    transform: translateY(-50%);
+    z-index: 9999; /* Déplace l'élément de 50% de sa propre hauteur vers le haut */
   }
   
   
   
   .popup {
     position: fixed;
+    width: 80%;
+    height: 80%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 20px;
     border: 2px solid black;
+    z-index: 9999;
   }
   
   .popup-content {
@@ -39,6 +43,7 @@
   
   .main-content {
     display: flex;
+    padding: 50px;
   }
   
   .image-container {
@@ -54,9 +59,39 @@
   .additional-info {
     display: flex;
     flex-direction: column;
+    width: 30%; /* Définit la largeur de toutes les divs */
   }
   
   .additional-info > div {
     margin-bottom: 10px; /* Espacement entre les informations supplémentaires */
+    width: 100%; /* Donne le même width à toutes les divs enfants */
+    height: 200px;
+    background-color: #404040;
+    border-radius: 74px;
   }
   
+  .image-container{
+    width: 30%;
+    height: 500px;
+    background-color: #404040;
+    border-radius: 74px;
+  }
+  .text-container{
+
+    width: 30%;
+    height: 500px;
+    background-color: #404040;
+    border-radius: 74px;
+  }
+  .additional-info .info1, .additional-info .info2{
+    width: 100%;
+    height: 200px;
+    background-color: #404040;
+    border-radius: 74px;
+  }
+  .additional-info .info2{
+    width: 100%;
+    height: 200px;
+    background-color: #404040;
+    border-radius: 74px;
+  }

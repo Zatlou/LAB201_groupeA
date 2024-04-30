@@ -4,7 +4,7 @@ import Square from './squareComponent.js';
 import '../App.css';
 import flecheRetour from './photos/flecheRetour.png';
 import polygon6 from './photos/polygon6.png';
-import backgroundImage from './photos/BackSainteMaxime.png'; 
+import backgroundImage from './photos/BackBrest.png'; 
 import MarseilleImage from './photos/Marseille4 3.png';
 import flecheNav from './photos/FlecheNavDroite.png';
 
@@ -65,10 +65,11 @@ function BrestComponent() {
         <img src={flecheRetour} alt="Première image" style={{ width: '40px', height: '40px' }} />
         <img src={polygon6} alt="Deuxième image" style={{ width: '40px', height: '40px' }} />
       </div>
-      <Square />
+      
       <div style={imageCenterStyle}> 
         <img src={MarseilleImage} alt="MarseilleImage" style={{ width: '280px', height: 'auto' }}  /> 
       </div>  
+      <Square/>
       <WaveComponent/>
       <img src={flecheNav} alt="Flèche" style={flecheStyle} />  
     </div>

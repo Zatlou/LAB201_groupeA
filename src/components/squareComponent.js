@@ -7,6 +7,7 @@ function Square() {
 
   const handleSquareClick = () => {
     setIsPopupOpen(true);
+    
   };
 
   const handleClosePopup = () => {

@@ -10,20 +10,20 @@ function Popup({ isOpen, onClose }) {
         
         <div className="main-content">
           <div className="image-container">
-            {/* Insérez ici votre contenu d'image */}
-            <img src="votre_image.jpg" alt="Votre image" />
+            
+            <img src="./components/photos/Athlètes/ARetornaz.png" alt="Votre image" />
           </div>
           <div className="text-container">
-            {/* Insérez ici votre contenu de texte */}
-            <p>Votre texte ici</p>
+           <h1>ALOISE RETORNAZ</h1>
+            <p>Aloïse commence la voile jeune et se passionne pour ce sport. A 9 ans, elle effectue un stage d’Optimist à Brest, sa ville natale. Sa monitrice d’alors se nomme Camille Lecointre et deviendra, 17 ans plus tard, sa coéquipière aux Jeux Olympiques de Tokyo.i</p>
           </div>
           <div className="additional-info">
             <div className="info1">
-              {/* Insérez ici le contenu de la première info */}
+              
               <p>Info 1</p>
             </div>
             <div className="info2">
-              {/* Insérez ici le contenu de la deuxième info */}
+              
               <p>Info 2</p>
             </div>
           </div>
