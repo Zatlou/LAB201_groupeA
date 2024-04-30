@@ -1,0 +1,62 @@
+/* Stylez votre carré */
+.square {
+    width: 140px;
+    height: 200px;
+    background-color: #D9D9D9;
+    border-radius: 30% 0 0 0;
+    box-shadow: 20px 20px 4px 0px rgba(0, 0, 0, 0.415);
+    
+    position: absolute;
+    top: 50%; /* Positionne l'élément au milieu de la page verticalement */
+    right: 7%; /* Positionne l'élément tout à droite de la page */
+    transform: translateY(-50%); /* Déplace l'élément de 50% de sa propre hauteur vers le haut */
+  }
+  
+  
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+  }
+  
+  .popup-content {
+    position: relative;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    display: flex;
+  }
+  
+  .image-container {
+    width: 33.33%;
+    margin-right: 20px; /* Marge entre l'image et le texte */
+  }
+  
+  .text-container {
+    width: 33.33%;
+    margin-right: 20px; /* Marge entre le texte et les informations supplémentaires */
+  }
+  
+  .additional-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .additional-info > div {
+    margin-bottom: 10px; /* Espacement entre les informations supplémentaires */
+  }
+  

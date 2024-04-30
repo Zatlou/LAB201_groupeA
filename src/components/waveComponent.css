@@ -1,0 +1,42 @@
+@keyframes waveAnimation1 {
+  0% {
+    transform: translateY(0) rotate(2deg);
+  }
+  50% {
+    transform: translateY(0) rotate(5deg); /* Augmentez l'amplitude */
+  }
+  100% {
+    transform: translateY(0) rotate(4deg);
+  }
+}
+
+@keyframes waveAnimation2 {
+  0% {
+    transform: translateY(0) rotate(0.41deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(2deg); /* Augmentez l'amplitude */
+  }
+  100% {
+    transform: translateY(0) rotate(0.41deg);
+  }
+}
+
+
+
+.wave {
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  height: 100%;
+}
+
+.wave1 {
+  animation: waveAnimation1 2.5s ease-in-out infinite;  
+}
+
+
+.wave2 {
+  animation: waveAnimation2 3.5s ease-in-out infinite; 
+  animation-delay: 0.5s; 
+}
