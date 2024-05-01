@@ -18,9 +18,9 @@ function WaveComponent() {
            width:'100%',
            
            height: '60%',
-           bottom:'-30px',
+           bottom:'-70px',
            zIndex: '0',
-
+            left: '12px',
         }}
       />
       <img
@@ -31,9 +31,9 @@ function WaveComponent() {
           width:'100%',
           height: '80%',
          rotate:'-3deg',
-         bottom:'-50px',
-         left:'-15px',
-          zIndex: '1', 
+         bottom:'-110px',
+         left:'-9px',
+          zIndex: '2', 
           
 
         }}

@@ -1,14 +1,18 @@
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom'; // Importez useNavigate
 import WaveComponent from './waveComponent.js'; 
 import Square from './squareComponent.js';
 import '../App.css';
 import flecheRetour from './photos/flecheRetour.png';
 import polygon6 from './photos/polygon6.png';
 import backgroundImage from './photos/BackBrest.png'; 
-import MarseilleImage from './photos/Marseille4 3.png';
+import BrestImage from './photos/brest.png';
 import flecheNav from './photos/FlecheNavDroite.png';
+import vector from './photos/Vector.png';
 
 function BrestComponent() {
+  const navigate = useNavigate(); // Utilisez useNavigate pour la navigation
+
   const centerStyle = {
     textAlign: 'center',
     fontWeight: 'bold',
@@ -45,8 +49,8 @@ function BrestComponent() {
 
   const imageCenterStyle = {
     position: 'absolute',
-    top: '30%',
-    left: '25%',
+    top: '35%',
+    left: '1%',
   };
   
   const flecheStyle = {
@@ -56,6 +60,11 @@ function BrestComponent() {
     width: '25%',
     height: 'auto',
     zIndex: '2',
+    cursor: 'pointer', // Ajoutez le style du curseur pointer pour indiquer qu'il est cliquable
+  };
+
+  const handleFlecheNavClick = () => {
+    navigate('/rochelle'); // Naviguez vers la page Rochelle au clic sur l'image flecheNav
   };
 
   return (
@@ -67,11 +76,19 @@ function BrestComponent() {
       </div>
       
       <div style={imageCenterStyle}> 
-        <img src={MarseilleImage} alt="MarseilleImage" style={{ width: '280px', height: 'auto' }}  /> 
+        <img src={BrestImage} alt="BrestImage" style={{ width: '400px', height: 'auto' }}  /> 
       </div>  
       <Square/>
+      <vector/>  
       <WaveComponent/>
-      <img src={flecheNav} alt="Flèche" style={flecheStyle} />  
+      
+      <img 
+        src={flecheNav} 
+        alt="Flèche" 
+        style={flecheStyle} 
+        onClick={handleFlecheNavClick} // Associez la fonction de gestion du clic au clic sur l'image flecheNav
+      />  
+      
     </div>
   );
 }
