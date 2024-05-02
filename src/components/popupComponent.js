@@ -12,11 +12,11 @@ function Popup({ isOpen, onClose }) {
         <button className="close-btn" onClick={onClose}>X</button>
         
         <div className="main-content">
-          <div className="text-container"></div>
-          {/* <div className="image-container">
-            {/* Utilisation de l'image importée */}
-           {/*  <img src={athleteBrest} alt="Athlète" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-          </div>  */}
+          
+          <div className="image-container">
+           
+           <img src={athleteBrest} alt="Athlète" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          </div>  
           <div className="text-container">
             <h1><span class="first-name">ALOISE </span><span class="last-name">RETORNAZ</span></h1>
             <h2>30 ANS</h2>
@@ -25,17 +25,14 @@ function Popup({ isOpen, onClose }) {
           <div className="additional-info">
             <div className="info1">
               <div className='partOne'>
-                <p style={{fontSize: '56px', marginTop: '0'}}>470</p>
-                <img alt='boat' src={boat} style={{width: 'auto', height: '150px'}}/>
+                
+                <img alt='boat' src={boat} style={{width: '100px', height: 'auto'}}/>
               </div> 
-              <div className='palmares-info'>
-                <p style={{color: '#81A8C3'}}>Palmares</p>
-                <img src={ellipse}/>
-                <img src={ellipse}/>
-              </div>
+             
             </div>
             <div className="info2">
-              <p>Info 2</p>
+              <img></img>
+              <p>LA ROCHELLE NAUTIQUE </p>
             </div>
           </div>
         </div>

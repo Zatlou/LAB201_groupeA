@@ -7,7 +7,7 @@ import wavePiece2 from './photos/Vagues/SDavant.png';
 
 function WaveComponent() {
   return (
-    <div >
+    <div className="scroll-container">
       <img
         src={wavePiece1}
         alt="Morceau de vague 1"
@@ -21,6 +21,7 @@ function WaveComponent() {
            bottom:'-70px',
            zIndex: '0',
             left: '12px',
+            
         }}
       />
       <img
@@ -34,6 +35,8 @@ function WaveComponent() {
          bottom:'-110px',
          left:'-9px',
           zIndex: '2', 
+         
+          scrollbarWidth: 'none'
           
 
         }}

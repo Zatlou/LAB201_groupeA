@@ -28,6 +28,8 @@
   bottom:0;
   width: 100%;
   height: 100%;
+ 
+  
 }
 
 .wave1 {
@@ -38,4 +40,15 @@
 .wave2 {
   animation: waveAnimation2 3.5s ease-in-out infinite; 
   animation-delay: 0.5s; 
+}
+.scroll-container {
+  /* ou toute autre hauteur */
+  
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
 }

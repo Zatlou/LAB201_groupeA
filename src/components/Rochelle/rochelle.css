@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+.special-h4 {
+    font-family: 'Special Elite';
+    letter-spacing: 17px;  
+    color: #323232;
+    position: absolute;
+    font-size: 25px;
+    left: 305px;
+    top: 120px
+
+}
